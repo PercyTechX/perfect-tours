@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Tours - Tu Guía de Viajes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Perfect Tours</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#destinos">Destinos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Descubre el mundo con Perfect Tours</h2>
+                <p>Encuentra las mejores experiencias y tours guiados en español</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="¿A dónde quieres viajar?">
+                    <button>Buscar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinos" class="destinos">
+            <h2>Destinos Populares en Perú</h2>
+            <div class="slider-container">
+                <button class="slider-button prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="destinos-slider">
+                    <div class="destino-card">
+                        <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1" alt="Machu Picchu">
+                        <div class="destino-content">
+                            <h3>Machu Picchu</h3>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Cusco</p>
+                            <p class="descripcion">Descubre una de las 7 maravillas del mundo moderno.</p>
+                            <p class="precio">Desde $89</p>
+                            <button class="ver-mas">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="destino-card">
+                        <img src="https://images.unsplash.com/photo-1531968455001-5c5272a41129" alt="Valle del Colca">
+                        <div class="destino-content">
+                            <h3>Valle del Colca</h3>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Arequipa</p>
+                            <p class="descripcion">Admira el vuelo del Cóndor y los paisajes más impresionantes.</p>
+                            <p class="precio">Desde $65</p>
+                            <button class="ver-mas">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="destino-card">
+                        <img src="https://images.unsplash.com/photo-1580619305218-8423a7ef79b4" alt="Líneas de Nazca">
+                        <div class="destino-content">
+                            <h3>Líneas de Nazca</h3>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Nazca</p>
+                            <p class="descripcion">Sobrevuela los misteriosos geoglifos del desierto.</p>
+                            <p class="precio">Desde $120</p>
+                            <button class="ver-mas">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="destino-card">
+                        <img src="https://images.unsplash.com/photo-1553550765-41e7dff2bd41?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lago Titicaca">
+                        <div class="destino-content">
+                            <h3>Lago Titicaca</h3>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Puno</p>
+                            <p class="descripcion">Visita las islas flotantes de los Uros y Taquile.</p>
+                            <p class="precio">Desde $75</p>
+                            <button class="ver-mas">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="destino-card">
+                        <img src="https://images.unsplash.com/photo-1723134087756-3fdd46625a84?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Huacachina">
+                        <div class="destino-content">
+                            <h3>Huacachina</h3>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Ica</p>
+                            <p class="descripcion">Aventúrate en los deportes de arena y el oasis del desierto.</p>
+                            <p class="precio">Desde $55</p>
+                            <button class="ver-mas">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="destino-card">
+                        <img src=https://images.unsplash.com/photo-1593692557859-b209f9f4ced4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt="Kuelap">
+                        <div class="destino-content">
+                            <h3>Kuélap</h3>
+                            <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Amazonas</p>
+                            <p class="descripcion">Explora la fortaleza de la cultura Chachapoyas.</p>
+                            <p class="precio">Desde $85</p>
+                            <button class="ver-mas">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-button next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots"></div>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="slider-container">
+                <button class="slider-button prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="servicios-slider">
+                    <div class="servicio-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 870w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1170w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1470w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1740w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1770w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2070w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2340w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2370w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2670w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2940w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2970w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3270w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3540w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3570w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3870w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4140w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=4170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4170w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=4470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4470w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=4740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4740w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=4770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4770w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=5070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5070w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=5340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5340w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=5370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5370w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=5670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5670w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=5940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5940w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=5970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5970w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=6270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 6270w, https://plus.unsplash.com/premium_photo-1661628841290-ee156112b835?q=80&w=6484&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 6484w" alt="Recojo Aeropuertos">
+                        <div class="servicio-content">
+                            <div class="servicio-icon">
+                                <i class="fas fa-plane-arrival"></i>
+                            </div>
+                            <h3>Recojo de Aeropuertos</h3>
+                            <p class="descripcion">Servicio profesional de recojo y traslado desde cualquier aeropuerto del Perú. Puntualidad y confort garantizados.</p>
+                            <ul class="caracteristicas">
+                                <li><i class="fas fa-check"></i> Monitoreo de vuelos</li>
+                                <li><i class="fas fa-check"></i> Asistencia con equipaje</li>
+                                <li><i class="fas fa-check"></i> Vehículos modernos</li>
+                            </ul>
+                            <button class="reservar-btn">Reservar Ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <img src="https://images.unsplash.com/photo-1557223563-8db8e5e7d90b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Traslado de Personal">
+                        <div class="servicio-content">
+                            <div class="servicio-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Traslado de Personal</h3>
+                            <p class="descripcion">Servicio especializado para empresas. Traslado seguro y puntual de su personal con unidades modernas y conductores profesionales.</p>
+                            <ul class="caracteristicas">
+                                <li><i class="fas fa-check"></i> Servicio corporativo</li>
+                                <li><i class="fas fa-check"></i> Rutas personalizadas</li>
+                                <li><i class="fas fa-check"></i> Reportes de servicio</li>
+                            </ul>
+                            <button class="reservar-btn">Contactar</button>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <img src="https://images.unsplash.com/photo-1580530719837-952e0515b69a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="City Tours">
+                        <div class="servicio-content">
+                            <div class="servicio-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h3>City Tours</h3>
+                            <p class="descripcion">Descubre las maravillas de cada ciudad con nuestros tours guiados. Experiencias únicas y momentos inolvidables.</p>
+                            <ul class="caracteristicas">
+                                <li><i class="fas fa-check"></i> Guías especializados</li>
+                                <li><i class="fas fa-check"></i> Rutas turísticas</li>
+                                <li><i class="fas fa-check"></i> Grupos reducidos</li>
+                            </ul>
+                            <button class="reservar-btn">Ver Tours</button>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <img src="https://akimovil.com.pe/wp-content/uploads/van-para-traslado-de-personal.jpg" alt="Traslados Privados">
+                        <div class="servicio-content">
+                            <div class="servicio-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3>Traslados Privados</h3>
+                            <p class="descripcion">Servicio exclusivo de transporte privado. Máxima comodidad y privacidad para sus traslados personales o familiares.</p>
+                            <ul class="caracteristicas">
+                                <li><i class="fas fa-check"></i> Servicio personalizado</li>
+                                <li><i class="fas fa-check"></i> Conductores bilingües</li>
+                                <li><i class="fas fa-check"></i> Disponibilidad 24/7</li>
+                            </ul>
+                            <button class="reservar-btn">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-button next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots"></div>
+        </section>
+
+        <section id="sobre-nosotros" class="sobre-nosotros">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <div class="sobre-nosotros-content">
+                    <div class="sobre-nosotros-texto">
+                        <h3>Tu Compañero de Viaje de Confianza</h3>
+                        <p>En Perfect Tours, nos apasiona hacer que tus viajes sean inolvidables. Con más de 10 años de experiencia, nos especializamos en crear experiencias únicas y personalizadas para viajeros de todo el mundo.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-text">Destinos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-text">Tours Realizados</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-text">Clientes Satisfechos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sobre-nosotros-imagen">
+                        <img src="https://img.freepik.com/foto-gratis/vista-frontal-joven-mano-puerta-coche_23-2148332927.jpg?t=st=1745890431~exp=1745894031~hmac=c9865a888675754a0480524a72141b437f8e759f40a7aa1115930cfd7c3bf020&w=996
+                        " alt="Equipo Perfect Tours">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contacto-content">
+                    <div class="contacto-info">
+                        <h3>¿Tienes alguna pregunta?</h3>
+                        <p>Estamos aquí para ayudarte a planificar tu próxima aventura.</p>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Dirección</h4>
+                                    <p>Av.San Fernando 265, Lima, Perú</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <p>+51 966 804 286</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@perfecttours.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacto-formulario">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="asunto" name="asunto" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="consulta">Consulta general</option>
+                                    <option value="reserva">Reserva</option>
+                                    <option value="presupuesto">Solicitar presupuesto</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Perfect Tours</h3>
+                <p>Tu guía de viajes de confianza</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>info@perfecttours.com</p>
+                <p>+51 966 804 286</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Perfect Tours | Todos los derechos reservados| Percy Tech</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
