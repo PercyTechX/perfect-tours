@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Menú responsive
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const menuOverlay = document.querySelector('.menu-overlay');
@@ -6,12 +7,59 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleMenu() {
         menuToggle.classList.toggle('active');
         navLinks.classList.toggle('active');
-        menuOverlay.classList.toggle('active');
+        if (menuOverlay) {
+            menuOverlay.classList.toggle('active');
+        }
         document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
     }
 
-    menuToggle.addEventListener('click', toggleMenu);
-    menuOverlay.addEventListener('click', toggleMenu);
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleMenu();
+        });
+    }
+
+    if (menuOverlay) {
+        menuOverlay.addEventListener('click', toggleMenu);
+    }
+
+    // Cerrar menú al hacer clic en los enlaces
+    const navLinksItems = document.querySelectorAll('.nav-links a');
+    navLinksItems.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // Cerrar menú con la tecla Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+
+    // Desplazamiento suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 
     // Función para inicializar sliders
     function initializeSlider(sliderContainer) {
@@ -108,30 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 250);
     });
 
-    // Desplazamiento suave para los enlaces del menú
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const headerOffset = 80;
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-
-                if (navLinks.classList.contains('active')) {
-                    toggleMenu();
-                }
-            }
-        });
-    });
-
     // Manejo del formulario de contacto
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -149,11 +173,4 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
-
-    // Cerrar el menú cuando se presiona la tecla Escape
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-            toggleMenu();
-        }
-    });
 });
