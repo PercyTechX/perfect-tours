@@ -47,9 +47,21 @@ body {
     position: relative;
 }
 
-.logo h1 {
-    color: #2c3e50;
-    font-size: 1.8rem;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+}
+
+.logo-img {
+    border: solid 1px #3498db;
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .menu-toggle {
@@ -360,6 +372,10 @@ body {
         width: 35px;
         height: 35px;
     }
+
+    .logo-img {
+        height: 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -373,6 +389,10 @@ body {
 
     .descripcion {
         font-size: 0.9rem;
+    }
+
+    .logo-img {
+        height: 35px;
     }
 }
 
